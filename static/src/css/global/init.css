@@ -1,0 +1,54 @@
+/*===========================css-初始化============================*/
+@charset "utf-8";
+html{}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+body{font-family:"微软雅黑";font-size:15px;color:#000000;word-wrap:break-word;}
+button,input,select,textarea{font:12px/1.5  Arial, "宋体", Helvetica,  Verdana, sans-serif;word-wrap:break-word;color:#565756;}
+ul,li{list-style:none;margin:0;padding:0;}
+h1, h2, h3, h4, h5, h6{font-weight:normal;font-size:100%;} 
+img{border:none;border:0;vertical-align:middle;}
+a{text-decoration:none;outline:none;}
+p{margin:0;padding:0;}
+input,select,textarea{vertical-align:middle;*font-size:100%;}
+input{margin:0;outline:none;padding:0;}
+input::-ms-clear{display:none;}
+.clearfix:after{
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	line-height:0;
+	content:'';
+}
+.clearfix{zoom:1;}
+*{
+    box-sizing: border-box;
+}
+/*===========================css-初始化============================*/
+
+/*jquery validate错误样式*/
+.mp-jv-error{
+	color: #ee2c2c;
+	font-weight: normal;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+/*页面宽度*/
+.sContainer{
+	width: 100%;
+}
+.sRow{
+	width: 1140px;
+	margin: 0px auto;
+}
+
+
+
+
+
+
+
+
+
+

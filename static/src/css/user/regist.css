@@ -1,0 +1,223 @@
+/*大背景开始==============================*/
+*::-moz-selection {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+}
+.mp-image-1{
+    background-image: url("../../img/IMAG0065-gray.jpg");
+    z-index: 1;
+}
+.mp-image,.mp-gradient{
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+} 
+.mp-gradient {
+    transition: all 0.25s ease-in-out 0s;
+}
+.mp-gradient-4{
+    background: rgba(0, 0, 0, 0) 
+    linear-gradient(to bottom, 
+    	rgba(255, 168, 0, 0.08) 0%,
+    	rgba(255, 168, 0, 0.08) 2%, 
+    	rgba(252, 138, 0, 0.08) 48%, 
+    	rgba(180, 255, 0, 0.08) 100%) 
+    repeat scroll 0 0;
+    z-index: 2;
+}
+
+/*大背景结束==============================*/
+
+/*中间内容开始==============================*/
+.mp-reg-content-container{
+	position: absolute;
+	width: 100%;
+	top: 160px;
+	z-index: 5;
+}
+.mp-reg-content-div{
+	width: 1000px;
+	margin: 0px auto;
+	height: 100%;
+}
+
+.mp-reg-form{
+	float: right;
+	width: 320px;
+}
+.mp-reg-form-text,.mp-reg-form-pass,.mp-reg-form-pass-sec{
+	width: 100%;
+	padding: 10px;
+	height: 42px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #333;
+    margin-top: 15px;
+}
+.mp-reg-form-text{
+	margin-top: 0px;
+}
+.mp-reg-form-text:focus,.mp-reg-form-pass:focus,.mp-reg-form-pass-sec:focus{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset, 0 0 12px rgba(255, 255, 255, 0.75);
+}
+
+.mp-reg-form-submit{
+	display: block;
+	width: 100%;
+	height: 42px;
+	background:#3c5b97;
+	color: #fff;
+	box-shadow: 0 -3px 0 #314974 inset; 
+	font-size: 16px;
+	border-radius:4px;
+	line-height: 40px;
+	text-align: center;
+	margin: 15px 0px;
+	border: none;
+	cursor: pointer;
+}
+.mp-reg-form-submit:hover{
+	background:#5372ae;
+	box-shadow: 0 -3px 0 #3e5a91 inset;
+}
+.mp-reg-form-valicode-div{
+	margin-top: 15px;
+}
+.mp-reg-form-valicode{
+	float: left;
+	width: 153px;
+	padding: 10px;
+	height: 42px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #333;
+}
+.mp-reg-form-valicode:focus{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset, 0 0 12px rgba(255, 255, 255, 0.75);
+}
+.mp-reg-form-valicode-img{
+	float: right;
+	width:152px;
+	height:42px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.mp-reg-form-agree{
+	color: #ccc;
+	margin-top: 15px;
+}
+.mp-reg-form-agree a{
+	color: #9dc0e5;
+}
+.mp-reg-form-agree a:hover{
+	color: #83b8f1;
+}
+.mp-login-form-sign-in{
+	float: right;
+	color: #ccc;
+}
+.mp-login-form-sign-in a{
+	color: #9dc0e5;
+}
+.mp-login-form-sign-in a:hover{
+	color: #83b8f1;
+}
+
+.mp-reg-h1{
+	color: #fff;
+	font-size: 50px;
+}
+.mp-reg-p{
+	color: #ccc;
+	font-size: 21px;
+	line-height: 40px;
+}
+
+/*中间内容结束==============================*/
+
+/*注册成功开始==============================*/
+.mp-reg-mask{
+	z-index: 6;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: #000;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8; 
+	display: none;
+}
+.mp-reg-success{
+	z-index: 7;
+	position: absolute;
+	width: 500px;
+	height: 300px;
+	left: 50%;
+	top: 50%;
+	margin-left: -250px;
+	margin-top: -200px;
+	border-radius: 10%;
+	display: none;
+}
+.mp-reg-success-top{
+	background: url("../../img/cloud-bottom-F2.png") no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 68px;
+}
+.mp-reg-success-content{
+	width: 100%;
+	height: 232px;
+	background: #fff;
+	border-radius: 0px 0px 10px 10px;
+	/*border:2px solid #4ba5e1;*/
+	border-top: 0px;
+	text-align: center;
+	color: #222;
+}
+.mp-reg-success-content h1{
+	font-size: 40px;
+	letter-spacing: 2px;
+	line-height: 2;
+}
+.mp-reg-success-content p{
+	font-size: 16px;
+	line-height: 2;
+}
+.mp-reg-success-content a{
+	width: 100px;
+	height: 91px;
+	background:url("../../img/plane.png");
+	display: inline-block;
+	margin-top: 10px;
+	position: relative;
+}
+.mp-reg-success-content span.plane{
+	color: #30a4f1;
+}
+.mp-reg-success-content span#reg-success-second{
+	color: #30a4f1;
+}
+.mp-reg-mask-visible{
+	display: block;
+}
+
+
+/*注册成功结束==============================*/
+
+
+
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>添加标</title>
+    <script src="../../static/libs/js/jquery/jquery.js"></script>
+    <script>
+      $(function(){
+        $("#commitMess").click(function(){
+          $.post("insertLoanMess",
+            $("#addLoanMess").serialize(),
+            function(data){
+              if(parseInt(data.result)==0){
+                alert("失败了哦，刷新页面重来吧！");
+              }else if(parseInt(data.result)==1){
+                alert("成功了哦，请上传标头像！");
+              }
+            },"json");
+        });
+      })
+    </script>
+  </head>
+  <body>
+    <form action="" id="addLoanMess" method="post">
+      <label for="title">　　标名：</label>
+      <input type="text" name="Title" id="title">
+      <br/><br/>
+
+      <label for="amount">借款金额：</label>
+      <input type="text" name="Amount" id="amount">
+      <br/><br/>
+
+      <label for="rate">年化利率：</label>
+      <input type="text" name="Rate" id="rate">
+      <br/><br/>
+
+      <label for="term_count">投资期限：</label>
+      <input type="text" name="Term_Count" id="term_count">
+      <br/><br/>
+
+      <label for="description">投资描述：</label>
+      <textarea name="Description" id="description" cols="30" rows="5"></textarea>
+      <br/><br/>
+
+      <label for="repay_type">还款方式：</label>
+      <select name="Repay_Type" id="repay_type">
+        <option value="0">等额本息</option>
+        <option value="1">按月付息，到期还本</option>
+        <option value="2">一次性还本付息</option>
+      </select>
+      <br/><br/>
+
+      <label for="loan_type">　标类型：</label>
+      <select name="Loan_Type" id="loan_type">
+        <option value="1">个人标</option>
+        <option value="2">企业标</option>
+      </select>
+      <br/><br/>
+
+      <input type="button" id="commitMess" value="先提交信息" />
+    </form>
+
+    <hr/>
+
+    <form action="insertLoan" method="post" enctype="multipart/form-data">
+      <label for="loan_pic">　标头像：</label>
+      <input type="file" name="Loan_Pic" id="loan_pic" multiple='mutiple'>
+      <br/><br/>
+
+      <button type="submit" id="uploadPic" >再上传标头像</button>
+    </form>
+
+    <script>
+      function addLoan(){
+        var formData=new FormData();
+        var files=document.getElementById("loan_pic").files;
+        var file=files[0];
+        formData.append('myfile',file);
+        var xhr=new XMLHttpRequest();
+        xhr.open("POST","insertLoan",true);
+        xhr.onload=function(e){
+          if(this.status==200){
+            var a=this.response;
+          }
+        };
+        xhr.send(formData);
+      }
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+

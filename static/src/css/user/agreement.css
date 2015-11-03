@@ -1,0 +1,49 @@
+.mp-agree-div{
+	background: #fff none repeat scroll 0 0;
+    box-shadow: 1px 1px 5px #ccc;
+    margin: 0 auto;
+    padding: 50px 50px 100px;
+    width: 800px;
+}
+.mp-agree-div h1{
+	font-size: 24px;
+    font-weight: bold;
+    margin: 56px auto;
+    text-align: center;
+    color: #ff7800;
+}
+.mp-agree-div h4{
+	color: #ff7800;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 35px;
+}
+.mp-agree-div p{
+	font-size: 14px;
+    line-height: 24px;
+    color: #3a3a3a;
+    font-family: "Microsoft YaHei",Arial;
+}
+.mp-agree-div p.t,.mp-agree-div p.t2{
+	font-weight: bold;
+    line-height: 24px;
+	font-size: 14px;
+    color: #3a3a3a;
+    font-family: "Microsoft YaHei",Arial;
+}
+.mp-agree-div p.t2{
+	text-indent: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

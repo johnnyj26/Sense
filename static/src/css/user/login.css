@@ -1,0 +1,136 @@
+/*大背景开始==============================*/
+*::-moz-selection {
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+}
+.mp-image-1{
+    background-image: url("../../img/post-1@2x.jpg");
+    z-index: 1;
+}
+.mp-image,.mp-gradient{
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    min-width: 1000px;
+    min-height: 500px;
+}
+.mp-gradient-1{
+    background: rgba(0, 0, 0, 0) 
+    linear-gradient(to bottom, 
+    	rgba(230, 240, 219, 0.08) 0%, 
+    	rgba(229, 253, 236, 0.08) 2%, 
+    	rgba(0, 120, 255, 0.08) 48%, 
+    	rgba(228, 0, 255, 0.08) 100%) 
+    repeat scroll 0 0;
+    z-index: 2;
+}
+.mp-gradient {
+    transition: all 0.25s ease-in-out 0s;
+}
+
+/*大背景结束==============================*/
+
+/*中间内容开始==============================*/
+.mp-login-content-container{
+	position: absolute;
+	height: 315px;
+	width: 100%;
+	top: 160px;
+	z-index: 5;
+}
+.mp-login-content-div{
+	width: 1000px;
+	margin: 0px auto;
+	height: 100%;
+}
+
+.mp-login-form{
+	float: right;
+	width: 320px;
+}
+.mp-login-form-text,.mp-login-form-pass{
+	width: 100%;
+	padding: 10px;
+	height: 42px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+    font-size: 16px;
+    background-color: #fafafa;
+    color: #333;
+    margin-top: 15px;
+}
+.mp-login-form-text{
+	margin-top: 0px;
+}
+.mp-login-form-text:focus,.mp-login-form-pass:focus{
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075) inset, 0 0 12px rgba(255, 255, 255, 0.75);
+}
+.mp-login-form-checkbox-div{
+	margin-top: 15px;
+}
+.mp-login-form-checkbox{
+	float: left;
+	color: #ccc;
+}
+.mp-login-form-checkbox-a{
+	float: right;
+	color: #9dc0e5;
+}
+.mp-login-form-checkbox-a:hover{
+	color: #83b8f1;
+}
+.mp-login-form-submit{
+	display: block;
+	width: 100%;
+	height: 42px;
+	background:#3c5b97;
+	color: #fff;
+	box-shadow: 0 -3px 0 #314974 inset; 
+	font-size: 16px;
+	border-radius:4px;
+	line-height: 40px;
+	text-align: center;
+	margin: 15px 0px;
+	border: 0px;
+	cursor: pointer;
+}
+.mp-login-form-submit:hover{
+	background:#5372ae;
+	box-shadow: 0 -3px 0 #3e5a91 inset;
+}
+.mp-login-form-sign-up{
+	float: right;
+	color: #ccc;
+}
+.mp-login-form-sign-up a{
+	color: #9dc0e5;
+}
+.mp-login-form-sign-up a:hover{
+	color: #83b8f1;
+}
+.mp-login-h1{
+	color: #fff;
+	font-size: 50px;
+}
+.mp-login-p{
+	color: #ccc;
+	font-size: 21px;
+	line-height: 40px;
+}
+.mp-login-form-logErr{
+	color: #ee2c2c;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+/*中间内容结束==============================*/
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,128 @@
+#cube-con {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	perspective: 1000px;	/*定义 3D 元素距视图的距离*/
+	-webkit-perspective: 1000px;
+	margin: 0px auto;
+	left: -60px;
+	top:100px;
+}
+#cube {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+
+	transform-style: preserve-3d;	/*子元素将保留其 3D 位置。*/
+	transform: translateZ( -100px ); 	/*z轴后退100px*/
+	transition: transform 1s;	/*过渡*/
+
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: translateZ( -100px );
+	-webkit-transition: -webkit-transform 1s;
+}
+#cube figure {
+	width: 198px;
+	height: 198px;
+	display: block;
+	position: absolute;
+	border: 1px solid #adfefe;
+	font-size: 100px;
+	line-height: 196px;
+	text-align: center;
+	filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+	color: #fff;
+	font-weight: bold;
+}
+
+#cube .front { transform: rotateY( 0deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateY( 0deg ) translateZ( 100px );background: #4ba5e1;}
+#cube .back { transform: rotateX( 180deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateX( 180deg ) translateZ( 100px );background: #a0ec2f; }
+#cube .right { transform: rotateY( 90deg ) translateZ( 100px ) translateX( 0px ); -webkit-transform: rotateY( 90deg ) translateZ( 100px );background: #e33737;}
+#cube .left { transform: rotateY( -90deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateY( -90deg ) translateZ( 100px );background: url("../../img/gitLogo.png") no-repeat center center;background-size: 56%;}
+#cube .top { transform: rotateX( 90deg ) translateZ( 100px ) translateX( 0px ); -webkit-transform: rotateX( 90deg ) translateZ( 100px );background: #7e3ce6;}
+#cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateX( -90deg ) translateZ( 100px );background: #e574ec; }
+
+@keyframes frontMove{
+	from {transform: rotateY( 0deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateY( 0deg ) translateZ( 100px );background: #408beb;}
+	to {transform: rotateY( 0deg ) translateZ( 100px ) translateX( -200px );-webkit-transform: rotateY( 0deg ) translateZ( 100px ) translateX( -200px );background: none;border: 0px;}
+}
+#cube .front{
+	animation:frontMove 1s 5s;
+	-webkit-animation:frontMove 1s 5s; /* Safari 和 Chrome */
+	animation-fill-mode: forwards;/*保留最后一帧效果*/
+}
+
+@keyframes backMove{
+	from { transform: rotateX( 180deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateX( 180deg ) translateZ( 100px );background: #a0ec2f; }
+	to {transform: rotateY( 0deg ) translateZ( 100px ) translateX( -100px );-webkit-transform: rotateY( 0deg ) translateZ( 100px ) translateX( -100px );background: none ;border: 0px;}
+}
+#cube .back{
+	animation:backMove 1s 5s;
+	-webkit-animation:backMove 1s 5s; /* Safari 和 Chrome */
+	animation-fill-mode: forwards;/*保留最后一帧效果*/
+}
+
+@keyframes rightMove{
+	from { transform: rotateY( 90deg ) translateZ( 100px ) translateX( 0px ); -webkit-transform: rotateY( 90deg ) translateZ( 100px );background: #e33737;}
+	to {transform: rotateY( 0deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateY( 0deg ) translateZ( 100px ) translateX( 0px );background: none ;border: 0px;}
+}
+#cube .right{
+	animation:rightMove 1s 5s;
+	-webkit-animation:rightMove 1s 5s; /* Safari 和 Chrome */
+	animation-fill-mode: forwards;/*保留最后一帧效果*/
+}
+
+@keyframes leftMove{
+	from { transform: rotateY( -90deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateY( -90deg ) translateZ( 100px );background: #f1f136 ; }
+	to {transform: rotateY( 0deg ) translateZ( 100px ) translateY( 200px );-webkit-transform: rotateY( 0deg ) translateZ( 100px ) translateY( 200px );border: 0px;}
+}
+#cube .left{
+	animation:leftMove 1s 5s;
+	-webkit-animation:leftMove 1s 5s; /* Safari 和 Chrome */
+	animation-fill-mode: forwards;/*保留最后一帧效果*/
+}
+
+@keyframes topMove{
+	from { transform: rotateX( 90deg ) translateZ( 100px ) translateX( 0px ); -webkit-transform: rotateX( 90deg ) translateZ( 100px );background: #7e3ce6 ;}
+	to {transform: rotateY( 0deg ) translateZ( 100px ) translateX( 100px );-webkit-transform: rotateY( 0deg ) translateZ( 100px ) translateX( 100px );background: none ;border: 0px;}
+}
+#cube .top{
+	animation:topMove 1s 5s;
+	-webkit-animation:topMove 1s 5s; /* Safari 和 Chrome */
+	animation-fill-mode: forwards;/*保留最后一帧效果*/
+}
+
+@keyframes bottomMove{
+	from { transform: rotateX( -90deg ) translateZ( 100px ) translateX( 0px );-webkit-transform: rotateX( -90deg ) translateZ( 100px );background: #e574ec ; }
+	to {transform: rotateY( 0deg ) translateZ( 100px ) translateX( 200px );-webkit-transform: rotateY( 0deg ) translateZ( 100px ) translateX( 200px );background: none ;border: 0px;}
+}
+#cube .bottom{
+	animation:bottomMove 1s 5s;
+	-webkit-animation:bottomMove 1s 5s; /* Safari 和 Chrome */
+	animation-fill-mode: forwards;/*保留最后一帧效果*/
+}
+
+
+#cube.change .front { transform: rotateY( 0deg ) translateZ( 100px ) translateX( 0px );background: none ;}
+#cube.change .back { transform: rotateX( 0deg ) translateZ( 100px ) translateX( 200px );background: none; }
+#cube.change .right { transform: rotateY( 0deg ) translateZ( 100px ) translateX( 400px );background: none;}
+#cube.change .left { transform: rotateY( 0deg ) translateZ( 100px ) translateX( 600px );background: none ; }
+#cube.change .top { transform: rotateX( 0deg ) translateZ( 100px ) translateX( 800px );background: none ;}
+#cube.change .bottom { transform: rotateX( 0deg ) translateZ( 100px ) translateX( 1000px );background: none ; }
+
+@keyframes SenseMove{
+	0% {transform: translateZ( -100px ) rotateY( 0deg );-webkit-transform: translateZ( -100px ) rotateY( 0deg );}
+	20% { transform: translateZ( -100px ) translateY( 120px ) rotateX( 180deg );-webkit-transform: translateZ( -100px ) translateY( 120px ) rotateX( 180deg );}
+	40% { transform: translateZ( -100px ) translateX( 40px ) rotateY( -90deg );-webkit-transform: translateZ( -100px ) translateX( 40px ) rotateY( -90deg );}
+	60% { transform: translateZ( -100px ) translateY( 100px ) rotateX( -90deg );-webkit-transform: translateZ( -100px ) translateY( 100px ) rotateX( -90deg );}
+	80% { transform: translateZ( -100px ) translateY( 60px ) rotateX( 90deg );-webkit-transform: translateZ( -100px ) translateY( 60px ) rotateX( 90deg );}
+	100% { transform: translateZ( -100px ) translateX( 40px ) rotateY( 90deg );-webkit-transform: translateZ( -100px ) translateX( 40px ) rotateY( 90deg );}
+}
+#cube{
+	animation:SenseMove 5s;
+	-webkit-animation:SenseMove 5s; /* Safari 和 Chrome */
+	/*animation-fill-mode: forwards;保留最后一帧效果*/
+}

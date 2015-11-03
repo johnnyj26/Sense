@@ -1,0 +1,59 @@
+/*头部开始==============================*/
+.mp-reg-top-container{
+	position: relative;
+	height: 60px;
+	width: 100%;
+	background: #f5f5f5;
+	z-index: 3;
+	min-width: 1000px;
+}
+.mp-reg-top-div{
+	width: 1000px;
+	margin: 0px auto;
+	height: 100%;
+}
+.mp-reg-top-div-L{
+	float: left;
+	font-size: 32px;
+	line-height: 60px;
+	color: #333;
+	font-weight: 400;
+	cursor: pointer;
+}
+.mp-reg-top-div-L a{
+	color: #333;
+}
+.mp-reg-top-div-L a:hover{
+	color: #4078c0;
+}
+.mp-reg-top-div-R{
+	float: right;
+}
+.mp-reg-top-div-R-sign-in,.mp-reg-top-div-R-sign-up{
+	padding: 6px 15px;
+	line-height: 20px;
+	margin-top: 14px;
+	display: inline-block;
+	font-size: 16px;
+	border-radius:4px;
+}
+.mp-reg-top-div-R-sign-in{
+	margin-right: 10px;
+	background:#3c5b97;
+	color: #fff;
+	box-shadow: 0 -3px 0 #314974 inset;
+}
+.mp-reg-top-div-R-sign-up{
+	background:#ddd;
+	color: #333;
+	box-shadow: 0 -3px 0 #aaa inset;
+}
+.mp-reg-top-div-R-sign-in:hover{
+	background:#5372ae;
+	box-shadow: 0 -3px 0 #3e5a91 inset;
+}
+.mp-reg-top-div-R-sign-up:hover{
+	background:#eee;
+	box-shadow: 0 -3px 0 #ccc inset;
+}
+/*头部结束==============================*/

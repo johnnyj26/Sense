@@ -1,0 +1,4 @@
+{
+	"name":"regist",
+	"main":"user/regist.js"
+}

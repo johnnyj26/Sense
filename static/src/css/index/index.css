@@ -1,0 +1,251 @@
+body,html{
+  height: 100%;
+  min-width: 1140px;
+}
+.s-index-banner{
+  height: 100%;
+}
+.s-indx-body{
+  
+}
+header{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background: #f5f5f5;
+	left: 0px;
+	top: 0px;
+	z-index: 22;
+	line-height: 80px;
+	box-shadow: 0px 1px 6px #173e58;
+}
+.sense-logo{
+	float: left;
+}
+.sense-logo a{
+	font-size: 40px;
+	color: #333;
+	cursor: pointer;
+}
+.sense-logo a:hover{
+	color: #4078c0;
+}
+header nav{
+	float: right;
+	font-size: 18px;
+}
+header nav a{
+	color: #555;
+	padding: 0px 15px;
+}
+header nav a.active{
+	color: #4078c0;
+}
+
+/*=============中间icon部分==============*/
+.s-index-Icon{
+	width: 100%;
+	height: 450px;
+	background: #3dd0ac;
+	text-align: center;
+	color: #fff;
+}
+.s-index-Icon h1{
+	font-size: 66px;
+	letter-spacing: 5px;
+	padding-top:10px;
+}
+.s-index-Icon h5{
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.s-index-Icon .icons{
+	width: 100%;
+	height: 285px;
+}
+.float-25{
+	width: 25%;
+	float: left;
+}
+.s-index-icon-M{
+	perspective: 1000;
+	width: 180px;
+	height: 180px;
+	border: 3px solid #fff;
+	border-radius:50%;
+	margin: 50px auto;
+	position: relative;
+	transition: transform 1s;	/*过渡*/
+	transform-style: preserve-3d;/*子元素保留期3d位置*/
+}
+.s-index-icon-M:hover{
+	transform: rotateY( 180deg ) rotateZ( 90deg ) ;
+}
+.s-index-icon-M div{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	border-radius:50%;
+	font-size: 45px;
+	text-align: center;
+	line-height: 180px;
+	backface-visibility:hidden;
+	-webkit-backface-visibility:hidden;	/* Chrome 和 Safari */
+	-moz-backface-visibility:hidden; 	/* Firefox */
+	-ms-backface-visibility:hidden; 	/* Internet Explorer */
+	cursor: pointer;
+}
+.s-index-icon-M1-front{
+	z-index: 3;
+	background: url("../../img/Icon-html5.png") #7de1c3 no-repeat center center;
+	background-size: 50% 70%;
+}
+.s-index-icon-M2-front{
+	z-index: 3;
+	background: url("../../img/Icon-css3.png") #7de1c3 no-repeat center center;
+	background-size: 50% 70%;
+}
+.s-index-icon-M3-front{
+	z-index: 3;
+	background: url("../../img/Icon-react.png") #7de1c3 no-repeat center center;
+	background-size: 70% 65%;
+}
+.s-index-icon-M4-front{
+	z-index: 3;
+	background: url("../../img/Icon-gulp.png") #7de1c3 no-repeat center center;
+	background-size: 35% 70%;
+}
+.s-index-icon-M1-back,.s-index-icon-M2-back,.s-index-icon-M3-back,.s-index-icon-M4-back{
+	z-index: 2;
+	background: #7de1c3;
+	transform: rotateY( 180deg ) rotateZ( 90deg );
+}
+/*=============中间icon部分==============*/
+
+/*=============loan部分==============*/
+.s-index-loan{
+	background:#f5f5f5;
+	padding: 20px 0px;
+}
+.s-index-loan-M{
+	width: 90%;
+	background:#fff;
+	margin: 0px auto;
+	padding: 10px;
+	border-radius:5px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	transition:all 0.5s;
+}
+.s-index-loan-M:hover{
+	box-shadow: 0 0px 6px #696d88;
+}
+.s-index-loan-M h1{
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+	padding: 12px 0px;
+}
+.s-index-loan-M img{
+	width: 237px;
+	height: 82px;
+	border: 1px solid #eee;
+	border-radius:5px;
+}
+.s-index-loan-pro-out{
+	height: 10px;
+	width: 100%;
+	background:#ddd;
+	border-radius:5px;
+	margin-bottom: 2px;
+}
+.s-index-loan-pro-in{
+	height: 10px;
+	width: 50%;
+	background:#4078c0;
+	border-radius:5px;
+}
+.s-index-loan-mess{
+	padding: 2px 0px;
+}
+.s-index-loan-mess span.e{
+	font-size: 16px;
+	color: #eb4a4b;
+}
+.s-index-loan-mess.margin-top-10{
+	margin-top: 10px;
+}
+.s-index-loan-btn{
+	height: 40px;
+	width: 100%;
+	display: block;
+	background: #4078c0;
+	color: #fff;
+	border-radius: 5px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 5px;
+	margin-top: 10px;
+}
+/*=============loan部分==============*/
+
+/*==============页尾部分==============*/
+footer{
+	background:#262626;
+	min-height: 200px;
+	letter-spacing: 2px;
+}
+footer .float-25{
+	border-left:1px solid #131313; 
+	border-right:1px solid #363636;
+	min-height: 200px;
+}
+footer .float-25:first-child{
+	border-left:0px;
+}
+footer .float-25:first-child+div+div+div{
+	border-right:0px;
+}
+footer ul{
+	padding: 20px;
+}
+footer ul li{
+	line-height: 30px;
+}
+footer ul li a{
+	line-height: 30px;
+	color: #acacac;
+}
+footer ul li a:hover{
+	color: #eee;
+}
+footer ul h1{
+	font-size: 20px;
+	color: #eee;
+}
+.footerMess h1{
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+	padding: 20px 0px;
+}
+.footerMess h2{
+	font-size: 14px;
+	color: #acacac;
+	text-align: center;
+}
+/*==============页尾部分==============*/
+
+
+
+
+
+
+
+
+
+
+

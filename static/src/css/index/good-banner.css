@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*banner*/
+.inbanner{
+    position:relative;
+    width:100%;
+    height:100%;/*高度在这里改*/
+}
+.inbanner a{
+    cursor: auto;
+}
+.layout{
+    position:relative;
+    z-index:21;
+    width:100%;
+    height: 22px;
+    top: 90%;
+}
+.inbanner .trigger-bar {
+	opacity : 0.6;
+    position: absolute;
+    z-index: 21;
+    text-align: center;
+    width: 100%;
+}
+.inbanner .trigger-bar .scrollable-trigger a {
+    height: 6px;
+    width: 28px;
+    margin: 0 5px;
+    border-radius: 2px;
+    display: inline-block;
+    background: none repeat scroll 0 0 #000;
+    cursor: pointer;
+}
+.inbanner .trigger-bar .scrollable-trigger a.current {
+    background: none repeat scroll 0 0 #FFF;
+}
+.s-banner-imgM{
+    position:absolute;
+    z-index:1;
+    height:100%;/*高度在这里改*/
+    width:100%;
+    top:0px;
+    background:fixed 50% 50% #fff;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
